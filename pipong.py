@@ -15,8 +15,8 @@ def game():
     clock = time.Clock()
     FPS = 60
 
-    racket1 = Player('racket.png', 30, 200, 30, 100, 4, win_width, win_height, window)
-    racket2 = Player('racket.png', 520, 200, 30, 100, 4, win_width, win_height, window)
+    racket1 = Player('racket.png', 30, 200, 25, 75, 4, win_width, win_height, window)
+    racket2 = Player('racket.png', 520, 200, 25, 75, 4, win_width, win_height, window)
     ball = GameSprite('tenis_ball.png', 200, 200, 50, 50, 4, win_width, win_height, window)
     speed_x = 5
     speed_y = 5
@@ -61,3 +61,4 @@ def game():
         clock.tick(FPS)
 if __name__ == '__main__':
     game()
+
